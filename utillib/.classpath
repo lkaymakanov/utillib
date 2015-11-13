@@ -11,8 +11,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Projects/utillib/lib/dblib.jar"/>
-	<classpathentry kind="lib" path="D:/Projects/utillib/lib/postgresql-9.1dev-900.jdbc3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
