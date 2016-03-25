@@ -140,7 +140,7 @@ public abstract class JAbstractTable  extends JTable {
 	        
 	        //fill data from object list
 	        private void setTableDataFromObjecs(List<IAbstractModel> obj){
-	        	if(obj == null || obj.size() == 0){ data = null; return;}
+	        	if(obj == null || obj.size() == 0){ data = null; SwingUtilities.updateComponentTreeUI(scrollPane); return;}
 	        	
 	        	//allocate array for data
 	        	data = new Object[obj.size()][1];
