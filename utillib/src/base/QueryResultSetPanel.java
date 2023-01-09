@@ -6,7 +6,6 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,6 @@ import net.is_bg.ltf.db.common.DBConfig;
 import net.is_bg.ltf.db.common.DBExecutor;
 import net.is_bg.ltf.db.common.UpdateSqlStatement;
 import net.is_bg.ltf.db.common.interfaces.IAbstractModel;
-import net.is_bg.ltf.db.common.interfaces.IResultSetMetaDataListener;
 import net.is_bg.ltf.db.common.paging.SelectPagingSqlStatement;
 import swing.utils.JAbstractColumn;
 
@@ -183,7 +181,7 @@ public class QueryResultSetPanel extends JPanel{
 				
 			};
 			
-			select.setResultSetMetaDataListener(new IResultSetMetaDataListener() {
+			/*select.setResultSetMetaDataListener(new IResultSetMetaDataListener() {
 				@Override
 				public void processMetaData(ResultSetMetaData arg0) {
 					// TODO Auto-generated method stub
@@ -199,7 +197,7 @@ public class QueryResultSetPanel extends JPanel{
 						e.printStackTrace();
 					}
 				}
-			});
+			});*/
 			
 			DBExecutor executor = new  DBExecutor(DBConfig.getConnectionFactory());
 			executor.execute(select);
